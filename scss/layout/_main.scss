@@ -1,0 +1,94 @@
+// Mobile:
+@media screen and (max-width: 375px) {
+    .main{
+        background-color: $pale-blue;
+        @include flexbox(flex, column, nowrap, center, center);
+        .card{
+            margin-top: 100px;
+            margin-bottom: 80px;
+            background-color: #fcfcfc;
+            @include flexbox(flex, column, nowrap, center, center);
+            gap: 20px;
+            width: 88%;
+            border-radius: 20px;
+            box-shadow: 0px 10px 70px $desaturated-blue;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            h1{
+                color: $dark-blue;
+                font-size: 22px;
+                font-weight: 900;
+            }
+            p{
+                width: 80%;
+                color: $desaturated-blue;
+                font-size: $p-font-size;
+                font-weight: 500;
+                line-height: 25px;
+                text-align: center;
+            }
+            .order{
+                width: 90%;
+                padding: 15px;
+                background-color: $very-pale-blue;
+                @include flexbox(flex, row, nowrap, space-between, center);
+                border-radius: 10px;
+                img{
+                    max-width: 20%;
+                }
+                div{
+                    h2{
+                        color: $dark-blue;
+                        font-size: $p-font-size;
+                        font-weight: 900;
+                    }
+                    p{
+                        font-size: $p-font-size;
+                        font-weight: 500;
+                    }
+                }
+                a{
+                    color: $bright-blue;
+                    font-size: 12px;
+                    font-weight: 700;
+                    &:hover{
+                        cursor: pointer;
+                        // color: $dark-blue;
+                    }
+                }
+            }
+            .btn--proceed{
+                width: 90%;
+                background-color: $bright-blue;
+                color: #fcfcfc;
+                font-size: 18px;
+                font-weight: 900;
+                padding: 15px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0px 10px 30px $desaturated-blue;
+                &:hover{
+                    cursor: pointer;
+                    // background-color: blue;
+                }
+            }
+            .cancel{
+                margin-bottom: 25px;
+                color: $desaturated-blue;
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+}
+
+
+// Desktop:
+@media screen and (min-width: 375px) {
+    
+}
