@@ -69,21 +69,126 @@ body {
           font-size: 12px;
           font-weight: 700; }
           .main .card .order a:hover {
-            cursor: pointer; }
+            cursor: pointer;
+            text-decoration: none;
+            color: #5345ed; }
       .main .card .btn--proceed {
         width: 90%;
         background-color: #3829e0;
         color: #fcfcfc;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 900;
         padding: 15px;
         border: none;
         border-radius: 10px;
         box-shadow: 0px 10px 30px #7280a7; }
         .main .card .btn--proceed:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: #5345ed; }
       .main .card .cancel {
         margin-bottom: 25px;
+        color: #7280a7;
+        font-weight: 700; }
+        .main .card .cancel:hover {
+          cursor: pointer;
+          color: #1f2f56; } }
+
+@media screen and (min-width: 375px) {
+  .main {
+    background: url(../images/pattern-background-desktop.svg);
+    background-color: #e0e8ff;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .main .card {
+      margin-top: 100px;
+      margin-bottom: 80px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 24%;
+      border-radius: 20px;
+      box-shadow: 0px 10px 10px #7280a7;
+      overflow: hidden; }
+      .main .card img {
+        width: 100%; }
+      .main .card h1 {
+        margin-top: 50px;
+        color: #1f2f56;
+        font-size: 28px;
+        font-weight: 900; }
+      .main .card > p {
+        margin-top: 20px;
+        width: 80%;
+        color: #7280a7;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center; }
+      .main .card .order {
+        margin-top: 20px;
+        width: 80%;
+        padding: 15px;
+        background-color: #f5f7ff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px; }
+        .main .card .order img {
+          padding: 8px;
+          width: 20%; }
+        .main .card .order div {
+          width: 60%;
+          margin-left: 20px;
+          gap: 5px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: flex-start; }
+          .main .card .order div h2 {
+            color: #1f2f56;
+            font-size: 16px;
+            font-weight: 900; }
+          .main .card .order div p {
+            color: #7280a7;
+            font-size: 16px;
+            font-weight: 500; }
+        .main .card .order a {
+          width: 20%;
+          color: #3829e0;
+          font-size: 14px;
+          font-weight: 700; }
+          .main .card .order a:hover {
+            cursor: pointer;
+            text-decoration: none;
+            color: #5345ed; }
+      .main .card .btn--proceed {
+        margin-top: 40px;
+        width: 80%;
+        background-color: #3829e0;
+        color: #fcfcfc;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px #7280a7; }
+        .main .card .btn--proceed:hover {
+          cursor: pointer;
+          background-color: #5345ed; }
+      .main .card .cancel {
+        margin-top: 40px;
+        margin-bottom: 50px;
         color: #7280a7;
         font-weight: 700; }
         .main .card .cancel:hover {
