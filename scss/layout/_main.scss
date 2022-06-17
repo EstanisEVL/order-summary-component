@@ -1,22 +1,29 @@
 // Mobile:
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .main{
+        background-image: url(../images/pattern-background-mobile.svg);
         background-color: $pale-blue;
+        background-repeat: no-repeat;
+        background-size: contain;
         @include flexbox(flex, column, nowrap, center, center);
         .card{
             margin-top: 100px;
-            margin-bottom: 80px;
+            margin-bottom: 120px;
             background-color: #fcfcfc;
             @include flexbox(flex, column, nowrap, center, center);
             gap: 20px;
             width: 88%;
             border-radius: 20px;
-            box-shadow: 0px 10px 70px $desaturated-blue;
+            // box-shadow: 0px 10px 70px $desaturated-blue;
+            box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+            -webkit-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+            -moz-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
             overflow: hidden;
             img{
                 width: 100%;
             }
             h1{
+                margin-top: 20px;
                 color: $dark-blue;
                 font-size: 22px;
                 font-weight: 900;
@@ -69,7 +76,10 @@
                 padding: 15px;
                 border: none;
                 border-radius: 10px;
-                box-shadow: 0px 10px 30px $desaturated-blue;
+                box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+                -webkit-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+                transition: background-color 0.3s ease;
                 &:hover{
                     cursor: pointer;
                     background-color: $bright-blue-hover;
@@ -79,6 +89,7 @@
                 margin-bottom: 25px;
                 color: $desaturated-blue;
                 font-weight: 700;
+                transition: color 0.3s ease;
                 &:hover{
                     cursor: pointer;
                     color: $dark-blue;
@@ -90,12 +101,12 @@
 
 
 // Desktop:
-@media screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) {
     .main{
         background: url(../images/pattern-background-desktop.svg);
         background-color: $pale-blue;
-        background-size: cover;
-        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
         @include flexbox(flex, column, nowrap, center, center);
         .card{
             margin-top: 100px;
@@ -104,7 +115,9 @@
             @include flexbox(flex, column, nowrap, center, center);
             width: 24%;
             border-radius: 20px;
-            box-shadow: 0px 10px 10px $desaturated-blue;
+            box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+            -webkit-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+            -moz-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
             overflow: hidden;
             img{
                 width: 100%;
@@ -112,11 +125,11 @@
             h1{
                 margin-top: 50px;
                 color: $dark-blue;
-                font-size: 28px;
+                font-size: 32px;
                 font-weight: 900;
             }
             > p{
-                margin-top: 20px;
+                margin-top: 25px;
                 width: 80%;
                 color: $desaturated-blue;
                 font-size: 18px;
@@ -127,7 +140,7 @@
             .order{
                 margin-top: 20px;
                 width: 80%;
-                padding: 15px;
+                padding: 25px;
                 background-color: $very-pale-blue;
                 @include flexbox(flex, row, nowrap, flex-start, center);
                 border-radius: 10px;
@@ -142,20 +155,20 @@
                     @include flexbox(flex, column, nowrap, center, flex-start);
                     h2{
                         color: $dark-blue;
-                        font-size: $p-font-size;
+                        font-size: 15px;
                         font-weight: 900;
                     }
                     p{
                         color: $desaturated-blue;
-                        font-size: $p-font-size;
-                        font-weight: 500;
+                        font-size: 14px;
                     }
                 }
                 a{
                     width: 20%;
                     color: $bright-blue;
                     font-size: 14px;
-                    font-weight: 700;
+                    font-weight: 900;
+                    transition: color 0.3s ease;
                     &:hover{
                         cursor: pointer;
                         text-decoration: none;
@@ -164,26 +177,29 @@
                 }
             }
             .btn--proceed{
-                margin-top: 40px;
+                margin: 30px 0px;
                 width: 80%;
                 background-color: $bright-blue;
                 color: #fcfcfc;
                 font-size: 14px;
                 font-weight: 900;
-                padding: 15px;
+                padding: 20px;
                 border: none;
                 border-radius: 10px;
-                box-shadow: 0px 10px 30px $desaturated-blue;
+                box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+                -webkit-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 0px 16px 5px 0px rgba(0,0,0,0.11);
+                transition: background-color 0.3s ease;
                 &:hover{
                     cursor: pointer;
                     background-color: $bright-blue-hover;
                 }
             }
             .cancel{
-                margin-top: 40px;
                 margin-bottom: 50px;
                 color: $desaturated-blue;
                 font-weight: 700;
+                transition: color 0.3s ease;
                 &:hover{
                     cursor: pointer;
                     color: $dark-blue;
